@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+    <style>
+        /* Add your CSS here */
+    </style>
+</head>
+<body>
+    <h1>CP476 Group Project</h1>
+
+    <!-- Search form -->
+    <form action="/search" method="POST">
+        <input type="text" name="search_query" placeholder="Search">
+        <input type="submit" value="Search">
+    </form>
+
+    <!-- Update form -->
+    <form action="/update" method="POST">
+        <input type="text" name="product_id" placeholder="Product ID">
+        <input type="text" name="supplier_id" placeholder="Supplier ID">
+        <input type="text" name="new_value" placeholder="New Value">
+        <input type="submit" value="Update">
+    </form>
+
+    <!-- Delete form -->
+    <form action="/delete" method="POST">
+        <input type="text" name="product_id" placeholder="Product ID">
+        <input type="text" name="supplier_id" placeholder="Supplier ID">
+        <input type="submit" value="Delete">
+    </form>
+
+    <!-- Inventory table -->
+    <table>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th>Supplier Name</th>
+        </tr>
+        <!-- The following rows would be dynamically generated based on database data -->
+        <tr>
+            <td>6789</td>
+            <td>TV</td>
+            <td>60</td>
+            <td>$380.5</td>
+            <td>A</td>
+            <td>Hitachi</td>
+        </tr>
+        <tr>
+            <td>5678</td>
+            <td>Camera</td>
+            <td>14</td>
+            <td>$70.6</td>
+            <td>A</td>
+            <td>Fujitsu</td>
+        </tr>
+    </table>
+</body>
+</html>
